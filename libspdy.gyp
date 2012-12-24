@@ -38,6 +38,7 @@
       ],
 
       'include_dirs': [
+        'config',
         'lib',
         'lib/includes',
         '.',
