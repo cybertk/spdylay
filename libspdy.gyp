@@ -43,6 +43,27 @@
         'lib/includes',
         '.',
       ],
+
+      'direct_dependent_settings': {
+        'include_dirs': [
+          'config',
+          'lib/includes',
+        ],
+      },
+    },
+
+    {
+      'target_name': 'spdycli',
+      'type': 'executable',
+
+      'dependencies': [
+        'libspdy',
+        '<(DEPTH)/third_party/openssl/openssl.gyp:openssl',
+      ],
+
+      'sources': [
+        'examples/spdycli.c'
+      ],
     },
   ],
 }
